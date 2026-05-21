@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hypix Rid — Gaming edits, fun stories, and comedy moments. Subscribe for daily entertainment!" />
+  <meta property="og:title" content="Hypix Rid | Gaming Channel" />
+  <meta property="og:description" content="GAMING MAKES US PERFECT! Fun edits, stories & comedy." />
+  <meta property="og:image" content="https://yt3.googleusercontent.com/UC_Np9zl2rDt-mudleJTC1Ow" />
+  <title>Hypix Rid | Gaming Channel</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Rajdhani (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ════════════════════════════════
+       NAVBAR
+  ════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">[</span>HYPIX<span class="logo-accent">RID</span><span class="logo-bracket">]</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#about">About</a></li>
+        <li>
+          <a href="https://www.youtube.com/@HypixRid?sub_confirmation=1" target="_blank" class="nav-sub-btn" rel="noopener">
+            Subscribe
+          </a>
+        </li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#videos" class="mob-link">Videos</a>
+      <a href="#about" class="mob-link">About</a>
+      <a href="https://www.youtube.com/@HypixRid?sub_confirmation=1" target="_blank" class="mob-link mob-sub" rel="noopener">Subscribe</a>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════════════
+       HERO SECTION
+  ════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <!-- Animated mesh background -->
+    <div class="hero-bg">
+      <canvas id="heroCanvas"></canvas>
+      <div class="hero-glow glow-1"></div>
+      <div class="hero-glow glow-2"></div>
+      <div class="hero-glow glow-3"></div>
+      <div class="scanlines"></div>
+    </div>
+
+    <div class="hero-content">
+      <!-- Avatar -->
+      <div class="avatar-ring" id="avatarRing">
+        <img
+          src="https://yt3.googleusercontent.com/ytc/AIdro_nEhyLlcj5w8e6NwDCBNnZzx2bMqFyg_bX0EYx5wg=s176-c-k-c0x00ffffff-no-rj"
+          alt="Hypix Rid Avatar"
+          class="avatar-img"
+          id="avatarImg"
+          onerror="this.src='https://placehold.co/120x120/0f0f0f/ff3c3c?text=HR'"
+        />
+        <div class="avatar-border"></div>
+      </div>
+
+      <div class="hero-text">
+        <p class="hero-tag">🎮 Gaming Channel</p>
+        <h1 class="hero-title">
+          <span class="title-line">HYPIX</span>
+          <span class="title-line accent-line">RID</span>
+        </h1>
+        <p class="hero-tagline">GAMING MAKES US PERFECT!</p>
+        <p class="hero-desc">
+          Fun edits&nbsp;💮 &nbsp;·&nbsp; Interesting stories&nbsp;🍆 &nbsp;·&nbsp; Comedy moments&nbsp;🐭
+        </p>
+
+        <div class="hero-actions">
+          <a
+            href="https://www.youtube.com/@HypixRid?sub_confirmation=1"
+            target="_blank"
+            class="btn btn-primary"
+            rel="noopener"
+          >
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19.6 3.2C20.9 3.56 21.94 4.6 22.3 5.9 23 8.3 23 12 23 12s0 3.7-.7 6.1c-.36 1.3-1.4 2.34-2.7 2.7C17.7 21.5 12 21.5 12 21.5s-5.7 0-8.1-.7C2.6 20.44 1.56 19.4 1.2 18.1.5 15.7.5 12 .5 12s0-3.7.7-6.1C1.56 4.6 2.6 3.56 3.9 3.2 6.3 2.5 12 2.5s5.7 0 7.6.7zM9.75 15.5l6.5-3.5-6.5-3.5v7z"/></svg>
+            Subscribe Now
+          </a>
+          <a href="#videos" class="btn btn-outline">Watch Videos</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       FEATURED VIDEO (Latest Upload)
+  ════════════════════════════════ -->
+  <section class="featured-section" id="featured">
+    <div class="container">
+      <div class="section-label">⚡ Latest Upload</div>
+      <div class="featured-card glass" id="featuredCard">
+        <!-- Populated by script.js -->
+        <div class="featured-skeleton">
+          <div class="skel skel-thumb"></div>
+          <div class="skel-info">
+            <div class="skel skel-title"></div>
+            <div class="skel skel-meta"></div>
+            <div class="skel skel-btn"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       LATEST VIDEOS GRID
+  ════════════════════════════════ -->
+  <section class="videos-section" id="videos">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">📺 All Videos</div>
+        <h2 class="section-title">Latest <span class="accent">Uploads</span></h2>
+        <p class="section-sub">Auto-updated from YouTube · no manual changes needed</p>
+      </div>
+
+      <!-- Video grid -->
+      <div class="video-grid" id="videoGrid">
+        <!-- Skeleton loaders -->
+        <div class="video-card glass skeleton-card"><div class="skel skel-card-thumb"></div><div class="skel-card-body"><div class="skel skel-card-title"></div><div class="skel skel-card-meta"></div></div></div>
+        <div class="video-card glass skeleton-card"><div class="skel skel-card-thumb"></div><div class="skel-card-body"><div class="skel skel-card-title"></div><div class="skel skel-card-meta"></div></div></div>
+        <div class="video-card glass skeleton-card"><div class="skel skel-card-thumb"></div><div class="skel-card-body"><div class="skel skel-card-title"></div><div class="skel skel-card-meta"></div></div></div>
+        <div class="video-card glass skeleton-card"><div class="skel skel-card-thumb"></div><div class="skel-card-body"><div class="skel skel-card-title"></div><div class="skel skel-card-meta"></div></div></div>
+        <div class="video-card glass skeleton-card"><div class="skel skel-card-thumb"></div><div class="skel-card-body"><div class="skel skel-card-title"></div><div class="skel skel-card-meta"></div></div></div>
+        <div class="video-card glass skeleton-card"><div class="skel skel-card-thumb"></div><div class="skel-card-body"><div class="skel skel-card-title"></div><div class="skel skel-card-meta"></div></div></div>
+      </div>
+
+      <!-- Error state -->
+      <div class="error-state hidden" id="errorState">
+        <div class="error-icon">⚠️</div>
+        <p class="error-msg">Couldn't load videos right now.</p>
+        <a href="https://www.youtube.com/@HypixRid" target="_blank" class="btn btn-outline" rel="noopener">Visit YouTube Channel</a>
+      </div>
+
+      <div class="view-all-wrap">
+        <a href="https://www.youtube.com/@HypixRid" target="_blank" class="btn btn-outline" rel="noopener">View All Videos →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       ABOUT SECTION
+  ════════════════════════════════ -->
+  <section class="about-section" id="about">
+    <div class="container about-inner">
+      <div class="about-visual">
+        <div class="about-img-wrap">
+          <img
+            src="https://yt3.googleusercontent.com/ytc/AIdro_nEhyLlcj5w8e6NwDCBNnZzx2bMqFyg_bX0EYx5wg=s176-c-k-c0x00ffffff-no-rj"
+            alt="Hypix Rid"
+            class="about-avatar"
+            onerror="this.src='https://placehold.co/200x200/0f0f0f/ff3c3c?text=HR'"
+          />
+          <div class="about-glow-ring"></div>
+        </div>
+        <div class="about-quote glass">"Something is better than nothing."<span class="quote-author">— Hypix Rid</span></div>
+      </div>
+
+      <div class="about-text">
+        <div class="section-label">👾 About the Creator</div>
+        <h2 class="section-title">Who is <span class="accent">Hypix Rid?</span></h2>
+        <p>
+          Hypix Rid is a gaming content creator on a mission to prove one thing:
+          <strong>Gaming makes us perfect.</strong> From wild gameplay edits to
+          laugh-out-loud comedy moments and storytelling nobody else dares to try —
+          this channel is pure, unfiltered entertainment.
+        </p>
+        <ul class="about-list">
+          <li><span class="list-icon">💮</span> Fun &amp; creative gaming edits</li>
+          <li><span class="list-icon">🍆</span> Interesting stories from the game world</li>
+          <li><span class="list-icon">😁</span> Doing things nobody has done before</li>
+          <li><span class="list-icon">🐭</span> Comedy moments that hit different</li>
+        </ul>
+        <div class="about-cta">
+          <a href="https://www.youtube.com/@HypixRid?sub_confirmation=1" target="_blank" class="btn btn-primary" rel="noopener">Subscribe Free</a>
+          <a href="mailto:gokugodofanime7@gmail.com" class="btn btn-ghost">Business Enquiry</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       FOOTER
+  ════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo"><span class="logo-bracket">[</span>HYPIX<span class="logo-accent">RID</span><span class="logo-bracket">]</span></span>
+        <p class="footer-tagline">GAMING MAKES US PERFECT!</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://www.youtube.com/@HypixRid" target="_blank" class="footer-link yt-link" rel="noopener">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19.6 3.2C20.9 3.56 21.94 4.6 22.3 5.9 23 8.3 23 12 23 12s0 3.7-.7 6.1c-.36 1.3-1.4 2.34-2.7 2.7C17.7 21.5 12 21.5 12 21.5s-5.7 0-8.1-.7C2.6 20.44 1.56 19.4 1.2 18.1.5 15.7.5 12 .5 12s0-3.7.7-6.1C1.56 4.6 2.6 3.56 3.9 3.2 6.3 2.5 12 2.5s5.7 0 7.6.7zM9.75 15.5l6.5-3.5-6.5-3.5v7z"/></svg>
+          YouTube Channel
+        </a>
+        <a href="mailto:gokugodofanime7@gmail.com" class="footer-link">📧 Contact</a>
+      </div>
+
+      <div class="footer-copy">
+        <p>© <span id="year"></span> Hypix Rid. All rights reserved.</p>
+        <p class="footer-sub">Website auto-updates via YouTube RSS feed.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
