@@ -3,220 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Hypix Rid — High-energy gaming edits, custom commentary, and creative digital storytelling." />
-  <meta property="og:title" content="Hypix Rid | Gaming Portfolio" />
-  <meta property="og:description" content="Gaming Redefined. High-tier edits and original narratives." />
-  <meta property="og:image" content="logo-yt.png" />
-  <title>Hypix Rid | Gaming Channel</title>
+  <meta name="description" content="Welcome to the Hypix Rid World. Stream elite gaming edits, immersive multi-layered stories, and unconventional digital content." />
+  <meta name="keywords" content="Hypix Rid, Hypix Rid World, gaming channel, video edits, gaming narratives" />
+  <meta property="og:title" content="Hypix Rid World | Official Gaming Hub" />
+  <meta property="og:description" content="Step into the Hypix Rid World. High-tier cinematic edits and original gaming narratives." />
+  <meta property="og:image" content="logo_yt.png" />
+  <title>Hypix Rid World | Gaming Channel</title>
   
   <link rel="stylesheet" href="style.css" />
   
-  <!-- Favicons -->
-  <link rel="icon" type="image/png" href="logo-yt.png" sizes="32x32" />
-  <link rel="apple-touch-icon" href="logo-yt.png" />
+  <!-- Modern Favicons Configured to Your Uploaded Assets -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
   
   <!-- Premium High-End Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Syncopate:wght@700&display=swap" rel="stylesheet" />
 </head>
-<body>
-
-  <!-- NAVBAR -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-inner">
-      <a href="#hero" class="nav-logo">
-        <img src="logo-yt.png" alt="Hypix Rid" style="height: 32px; width: auto; display: block;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-        <span class="logo-fallback" style="display: none; font-family: 'Syncopate', sans-serif; font-size: 1.2rem; letter-spacing: 2px; color: #ffffff;">HYPIX RID</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="#videos">Videos</a></li>
-        <li><a href="#about">About</a></li>
-        <li>
-          <a href="https://www.youtube.com/@HypixRid?sub_confirmation=1" target="_blank" class="nav-sub-btn" rel="noopener">
-            Subscribe
-          </a>
-        </li>
-      </ul>
-      <button class="hamburger" id="hamburger" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <!-- Mobile menu -->
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="#videos" class="mob-link">Videos</a>
-      <a href="#about" class="mob-link">About</a>
-      <a href="https://www.youtube.com/@HypixRid?sub_confirmation=1" target="_blank" class="mob-link mob-sub" rel="noopener">Subscribe</a>
-    </div>
-  </nav>
-
-  <!-- HERO SECTION -->
-  <section class="hero" id="hero">
-    <div class="hero-bg">
-      <canvas id="heroCanvas"></canvas>
-      <div class="hero-glow glow-1"></div>
-      <div class="hero-glow glow-2"></div>
-      <div class="hero-glow glow-3"></div>
-      <div class="scanlines"></div>
-    </div>
-
-    <div class="hero-content">
-      <!-- Avatar -->
-      <div class="avatar-ring" id="avatarRing">
-        <img
-          src="logo-yt.png"
-          alt="Hypix Rid Avatar"
-          class="avatar-img"
-          id="avatarImg"
-          onerror="this.src='https://placehold.co/120x120/0f0f0f/ff3c3c?text=HR'"
-        />
-        <div class="avatar-border"></div>
-      </div>
-
-      <div class="hero-text">
-        <p class="hero-tag">Active Broadcast</p>
-        <h1 class="hero-title">
-          <span class="title-line">HYPIX</span>
-          <span class="title-line accent-line">RID</span>
-        </h1>
-        <p class="hero-tagline">GAMING MAKES US PERFECT</p>
-        <p class="hero-desc">
-          Cinematic Edits &nbsp;·&nbsp; Original Narratives &nbsp;·&nbsp; Unfiltered Matches
-        </p>
-
-        <div class="hero-actions">
-          <a
-            href="https://www.youtube.com/@HypixRid?sub_confirmation=1"
-            target="_blank"
-            class="btn btn-primary"
-            rel="noopener"
-          >
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19.6 3.2C20.9 3.56 21.94 4.6 22.3 5.9 23 8.3 23 12 23 12s0 3.7-.7 6.1c-.36 1.3-1.4 2.34-2.7 2.7C17.7 21.5 12 21.5 12 21.5s-5.7 0-8.1-.7C2.6 20.44 1.56 19.4 1.2 18.1.5 15.7.5 12 .5 12s0-3.7.7-6.1C1.56 4.6 2.6 3.56 3.9 3.2 6.3 2.5 12 2.5s5.7 0 7.6.7zM9.75 15.5l6.5-3.5-6.5-3.5v7z"/></svg>
-            Launch Channel
-          </a>
-          <a href="#videos" class="btn btn-outline">Browse Media</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Scroll indicator -->
-    <div class="scroll-hint">
-      <span>scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
-
-  <!-- FEATURED VIDEO -->
-  <section class="featured-section" id="featured">
-    <div class="container">
-      <div class="section-label">Latest Media Drop</div>
-      <div class="featured-card glass" id="featuredCard">
-        <div class="featured-skeleton">
-          <div class="skel skel-thumb"></div>
-          <div class="skel-info">
-            <div class="skel skel-title"></div>
-            <div class="skel skel-meta"></div>
-            <div class="skel skel-btn"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- LATEST VIDEOS GRID -->
-  <section class="videos-section" id="videos">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-label">Archive</div>
-        <h2 class="section-title">Recent <span class="accent">Deployments</span></h2>
-        <p class="section-sub">Synchronized directly with the YouTube network feed.</p>
-      </div>
-
-      <!-- Video grid -->
-      <div class="video-grid" id="videoGrid">
-        <!-- Skeleton loaders -->
-        <div class="video-card glass skeleton-card"><div class="skel skel-card-thumb"></div><div class="skel-card-body"><div class="skel skel-card-title"></div><div class="skel skel-card-meta"></div></div></div>
-        <div class="video-card glass skeleton-card"><div class="skel skel-card-thumb"></div><div class="skel-card-body"><div class="skel skel-card-title"></div><div class="skel skel-card-meta"></div></div></div>
-        <div class="video-card glass skeleton-card"><div class="skel skel-card-thumb"></div><div class="skel-card-body"><div class="skel skel-card-title"></div><div class="skel skel-card-meta"></div></div></div>
-        <div class="video-card glass skeleton-card"><div class="skel skel-card-thumb"></div><div class="skel-card-body"><div class="skel skel-card-title"></div><div class="skel skel-card-meta"></div></div></div>
-        <div class="video-card glass skeleton-card"><div class="skel skel-card-thumb"></div><div class="skel-card-body"><div class="skel skel-card-title"></div><div class="skel skel-card-meta"></div></div></div>
-        <div class="video-card glass skeleton-card"><div class="skel skel-card-thumb"></div><div class="skel-card-body"><div class="skel skel-card-title"></div><div class="skel skel-card-meta"></div></div></div>
-      </div>
-
-      <!-- Error state -->
-      <div class="error-state hidden" id="errorState">
-        <p class="error-msg">Feed synchronization interrupted.</p>
-        <a href="https://www.youtube.com/@HypixRid" target="_blank" class="btn btn-outline" rel="noopener">Direct Channel Link</a>
-      </div>
-
-      <div class="view-all-wrap">
-        <a href="https://www.youtube.com/@HypixRid" target="_blank" class="btn btn-outline" rel="noopener">Full Video Archive →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT SECTION -->
-  <section class="about-section" id="about">
-    <div class="container about-inner">
-      <div class="about-visual">
-        <div class="about-img-wrap">
-          <img
-            src="logo-yt.png"
-            alt="Hypix Rid"
-            class="about-avatar"
-            onerror="this.src='https://placehold.co/200x200/0f0f0f/ff3c3c?text=HR'"
-          />
-          <div class="about-glow-ring"></div>
-        </div>
-        <div class="about-quote glass">"Something is better than nothing."<span class="quote-author">— Hypix Rid</span></div>
-      </div>
-
-      <div class="about-text">
-        <div class="section-label">Profile</div>
-        <h2 class="section-title">Who is <span class="accent">Hypix Rid</span></h2>
-        <p>
-          Hypix Rid breaks standard content conventions to bring high-octane performance to gaming entertainment. 
-          By combining tailored visual edits, structured multi-layered stories, and unconventional approaches, 
-          the project strips away typical platform filler to build an actual experience.
-        </p>
-        <ul class="about-list">
-          <li><span class="list-icon"></span> High-tier conceptual video editing</li>
-          <li><span class="list-icon"></span> Deep dive story analysis across game universes</li>
-          <li><span class="list-icon"></span> Unorthodox approaches to gameplay mechanics</li>
-          <li><span class="list-icon"></span> Raw situational comedy built inside matches</li>
-        </ul>
-        <div class="about-cta">
-          <a href="https://www.youtube.com/@HypixRid?sub_confirmation=1" target="_blank" class="btn btn-primary" rel="noopener">Secure Subscription</a>
-          <a href="mailto:gokugodofanime7@gmail.com" class="btn btn-ghost">Business Operations</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-glow"></div>
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <span class="footer-logo" style="font-family: 'Syncopate', sans-serif; letter-spacing: 2px;">HYPIX RID</span>
-        <p class="footer-tagline">GAMING MAKES US PERFECT</p>
-      </div>
-
-      <div class="footer-links">
-        <a href="https://www.youtube.com/@HypixRid" target="_blank" class="footer-link yt-link" rel="noopener">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19.6 3.2C20.9 3.56 21.94 4.6 22.3 5.9 23 8.3 23 12 23 12s0 3.7-.7 6.1c-.36 1.3-1.4 2.34-2.7 2.7C17.7 21.5 12 21.5 12 21.5s-5.7 0-8.1-.7C2.6 20.44 1.56 19.4 1.2 18.1.5 15.7.5 12 .5 12s0-3.7.7-6.1C1.56 4.6 2.6 3.56 3.9 3.2 6.3 2.5 12 2.5s5.7 0 7.6.7zM9.75 15.5l6.5-3.5-6.5-3.5v7z"/></svg>
-          YouTube Portal
-        </a>
-        <a href="mailto:gokugodofanime7@gmail.com" class="footer-link">Contact Desk</a>
-      </div>
-
-      <div class="footer-copy">
-        <p>© <span id="year"></span> Hypix Rid. All rights reserved.</p>
-        <p class="footer-sub">Engineered via dynamic automated platform feeds.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
